@@ -15,7 +15,7 @@ build_director()
   cd director
   git remote add pf https://github.com/peteflorence/director.git
   git fetch pf
-  git checkout pf/corl-master
+  git checkout pf/corl-master-2
   cd ..
 
   mkdir director-build
@@ -52,6 +52,7 @@ build_elasticfusion()
 
   git clone https://github.com/stevenlovegrove/Pangolin.git
   cd Pangolin
+  git checkout 7bc1b4fa938875b0224ac13770ce1d480f178910
   mkdir build
   cd build
   cmake ../ -DAVFORMAT_INCLUDE_DIR="" -DCPP11_NO_BOOST=ON
